@@ -1,0 +1,48 @@
+/* 
+Document   : a simply layout for demoing Tab interface for static content using JavaScript Prototype
+Author     : Ian Irving http://www.FalsePositives.com
+Created on : Sept 22, 2008, 9:38:33 AM
+Modified on: Nov 28, 2008
+blog post  : http://www.falsepositives.com/index.php/2008/10/09/tab-interface-for-static-content-using-javascript-prototype/
+license    : This work is licensed under a Creative Commons License. to Share and remix with Attribution
+              http://creativecommons.org/licenses/by/2.0/ca/
+Description: minium sample styling for demoing Tab interface for static content using JavaScript Prototype
+*/
+/* reset css */
+body,form,div, ul,ol,li {margin:0; padding:0; }
+div#container {margin: 0 10 auto;}
+
+.TabNav {
+    padding:0;
+    margin:0;
+    color:blue;
+    font-family: arial, helvetica, sans-serif;
+    white-space:nowrap;
+    list-style-type:none;
+}
+.TabNav li {
+    display:inline;
+    padding:5px 25px;
+    background: lightgrey;
+    color:black;
+    text-decoration:none;
+    float:left;
+    border:1px solid #000;
+}
+.TabNav li:hover {
+    background:#08c;
+    color:#fff;
+}
+.TabNav li a {
+    text-decoration:none;
+}
+.TabNav li.selectedTab {    
+    background:#ffffff;
+    color:green; 
+    border-bottom-style: none;    
+}
+.backgroundRed {
+    margin:10px 0px 0px 0px;
+    padding:10px 5px 10px 25px;
+    background-color:#ffffff;
+}

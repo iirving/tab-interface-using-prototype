@@ -1,0 +1,89 @@
+<!-- 
+   Document   : a simply layout for demoing Tab interface for static content using JavaScript Prototype
+   Created on : Sept 22, 2008, 9:38:33 AM
+   Author     : Ian Irving http://www.FalsePositives.com
+   Full describtion : http://www.falsepositives.com/index.php/2008/10/09/tab-interface-for-static-content-using-javascript-prototype/
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="tab3.css" />
+        <script type="text/javascript"  src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>        
+        <script type="text/javascript" src="tab.js"></script>        
+    </head>
+    <body>
+        <div id="container">            
+            <div >Page Navigation                    
+                <ul class="TabNav" >
+                    <li ><a href="#SectionAA">A Section</a></li>
+                    <li ><a href="#SectionAnother">another Section</a></li>
+                    <li><a href="#Section3">Section 3</a></li>
+                    <li><a href="#Section4">Section 4</a></li>
+                    <li><a href="#Section5">Section 5 with a longer name</a></li>           
+                </ul>                    
+            </div><br/>
+            <div id="Content" class="backgroundRed">&nbsp;</div>
+            <div>
+                <div id="SectionAA" ><h4>Section content can be static text, as in this example:</h4>
+                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Sed varius justo nec diam. Aliquam tempor, ipsum ac gravida mollis, libero massa blandit leo, 
+                        ut tristique lacus nunc venenatis nisi. Donec in lectus ut mi tincidunt faucibus. 
+                        Suspendisse adipiscing ullamcorper massa. Pellentesque tempus sodales felis. 
+                    Pellentesque sapien eros, pulvinar eget, rhoncus. </div>
+                </div>            
+                <div id="SectionAnother" ><h4>section content could be html elemets, as in this example  :  </h4>             
+                    <div><input type="radio" name="choiceviewMany" value="red" id="red" /><label for="red">red</label>  </div>            
+                    <div><input type="radio" name="choiceviewMany" value="blue" id="blue" /><label for="blue">blue</label></div>
+                    <div><input type="radio" name="choiceviewMany" value="green" /><label for="green">green</label></div>
+                    <div><label for="firstname">First name: </label><input type="text" name="firstname" id="firstname"></div>
+                    <div> <label for="lastname">Last name: </label><input type="text" name="lastname" id="lastname"></div>
+                    <div><select>
+                            <optgroup label="Swedish Cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                            </optgroup>
+                            <optgroup label="German Cars">
+                                <option value="mercedes">Mercedes</option>
+                                <option label="Audi" value="audi">
+                                Audi (Auto Union Deutschland Ingolstadt)</option>
+                            </optgroup>
+                    </select></div>
+                </div>
+                <div id="Section3"><h4> or content could be an image  </h4>
+                    <a href="http://www.flickr.com/photos/falsepositives/2879204876/" title="Fall Raspberries by False Positives, on Flickr"><img src="http://farm3.static.flickr.com/2329/2879204876_8901a0ff7a.jpg" width="450" alt="Fall Raspberries" /></a>
+                    
+                </div>
+                <div id="Section4" ><h4>or any combination, as needed</h4>
+                    <div>
+                        <a href="http://www.flickr.com/photos/falsepositives/2879204876/" title="Fall Raspberries by False Positives, on Flickr"><img src="http://farm3.static.flickr.com/2329/2879204876_8901a0ff7a.jpg" width="450" alt="Fall Raspberries" /></a>
+                    </div>
+                    <div><input type="radio" name="choiceviewMany" value="red" id="red" /><label for="red">red</label>  </div>            
+                    <div><input type="radio" name="choiceviewMany" value="blue" id="blue" /><label for="blue">blue</label></div>
+                    <div><input type="radio" name="choiceviewMany" value="green" /><label for="green">green</label></div>
+                    <div><label for="firstname">First name: </label><input type="text" name="firstname" id="firstname"></div>
+                    <div> <label for="lastname">Last name: </label><input type="text" name="lastname" id="lastname"></div>
+                    <div><select name="cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                    </select></div>
+                    <div>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Sed varius justo nec diam. Aliquam tempor, ipsum ac gravida mollis, libero massa blandit leo, 
+                        ut tristique lacus nunc venenatis nisi. Donec in lectus ut mi tincidunt faucibus. 
+                        Suspendisse adipiscing ullamcorper massa. Pellentesque tempus sodales felis. 
+                    Pellentesque sapien eros, pulvinar eget, rhoncus. </div>
+                    
+                </div>
+                <div id="Section5" ><h4>just another section with content</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec fringilla eros ac dolor. Cras rutrum ante lacinia nisl. Suspendisse pellentesque consequat lacus. Fusce ligula augue, aliquam sed, dignissim quis, lacinia ut, erat. Nunc leo tortor, eleifend et, viverra sed, pellentesque ac, tellus. Ut quam dui, laoreet non, cursus vitae, feugiat vel, ligula. Nunc ipsum. Donec ante. Nullam tincidunt. In sollicitudin, lorem sed blandit lobortis, mi sapien porta lectus, et blandit dolor sapien vel est. Donec vehicula. Etiam vehicula risus. Vivamus aliquet urna sed dolor. Vestibulum posuere, tortor ac condimentum vestibulum, pede purus sodales pede, eget consequat nibh sem quis est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ac pede. Nunc vitae enim quis leo auctor elementum.
+                    </p>
+                    <p>Nam sollicitudin volutpat purus. Suspendisse egestas eros sit amet quam venenatis eleifend. Maecenas mattis, odio quis posuere pellentesque, mauris arcu aliquet erat, nec fringilla mauris ligula eu. 
+                    </p>
+                </div>                
+            </div>      
+        </div>
+    </body>
+</html>
